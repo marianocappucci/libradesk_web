@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    image: libradesk-web:latest
+    container_name: libradesk-web
+    restart: unless-stopped
+    ports:
+      - "8088:80"
+    networks:
+      - stack-net
+
+networks:
+  stack-net:
+    external: true
+    name: stack_stack-net

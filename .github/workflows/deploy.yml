@@ -1,0 +1,16 @@
+name: Deploy a VPS
+
+# Reusa el mismo reusable workflow que Contalibra/Restolibra/Gestiolibra/
+# MedLibra/VentaLibra -- ver libra-web-kit/.github/workflows/deploy-vps.yml.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    uses: marianocappucci/libra-web-kit/.github/workflows/deploy-vps.yml@main
+    with:
+      remote_path: /root/libradesk_web/
+    secrets: inherit
