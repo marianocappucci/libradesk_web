@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Depósitos — Documentación LibraDesk</title>
+  <title>Ventas y cobranzas — Documentación LibraDesk</title>
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,14 +34,14 @@
     <div class="docs-sidebar-section">Clientes y equipos</div>
     <a href="/docs/clientes.html">Clientes</a>
     <a href="/docs/equipos.html">Equipos</a>
-    <a href="/docs/depositos.html" class="active">Depósitos</a>
+    <a href="/docs/depositos.html">Depósitos</a>
     <a href="/docs/equipos-flota.html">Equipos y flota</a>
     <div class="docs-sidebar-section">Inventario y compras</div>
     <a href="/docs/stock.html">Stock y productos</a>
     <a href="/docs/compras.html">Compras</a>
     <div class="docs-sidebar-section">Ventas</div>
     <a href="/docs/presupuestos-remitos.html">Presupuestos y remitos</a>
-    <a href="/docs/ventas-cobranzas.html">Ventas y cobranzas</a>
+    <a href="/docs/ventas-cobranzas.html" class="active">Ventas y cobranzas</a>
     <a href="/docs/facturacion.html">Enviar a facturar</a>
     <div class="docs-sidebar-section">Alquileres</div>
     <a href="/docs/contratos.html">Equipos en alquiler</a>
@@ -53,17 +53,21 @@
   </nav>
 
   <main class="docs-content">
-    <h1>Depósitos</h1>
-<p class="docs-lead">Dónde se guardan los equipos: los tuyos y los que están en la sede del cliente.</p>
-<h2>Dos clases</h2>
-<p>Un depósito puede ser <strong>propio</strong> —el taller, el depósito central, un pañol— o <strong>de un cliente</strong>. La diferencia no es cosmética: un equipo de un cliente sólo puede estar en un depósito propio o en el suyo.</p>
-<h2>Qué se ve</h2>
-<p>Cada depósito lista los equipos que tiene adentro, con su estado. Es la vista que contesta “¿qué hay en el taller ahora?” sin buscar equipo por equipo.</p>
-<h2>Movimientos</h2>
-<p>Mover un equipo de un depósito a otro deja registro con origen, destino, motivo y quién lo hizo. El <a href="/docs/reportes.html">reporte de movimientos</a> los muestra todos juntos.</p>
+    <h1>Ventas y cobranzas</h1>
+<p class="docs-lead">El comprobante interno de venta, los recibos de cobro y el saldo de cada cliente.</p>
+<div class="callout"><p>Módulo del plan <strong>Premium</strong>. <strong>LibraDesk no emite facturas.</strong> Lo que se carga acá es el comprobante interno: qué se vendió, a quién, a qué precio y cómo se cobró. La factura fiscal la emite tu sistema contable — ver <a href="/docs/facturacion.html">Enviar a facturar</a>.</p></div>
+<h2>Ventas</h2>
+<p>La venta toma los precios de la <a href="/docs/stock.html">lista</a> vigente y descuenta el stock de lo entregado. Si lo vendido es un equipo del parque, además <strong>sale del inventario de activos</strong>: no queda disponible para alquilar algo que ya no tenés.</p>
+<h2>Su remito</h2>
+<p>Cada venta genera su <a href="/docs/presupuestos-remitos.html">remito</a>, y ese es su camino a facturación. No hay un atajo que mande la venta directo a facturar: lo que habilita a facturar es la entrega hecha, y el remito es el papel que la prueba.</p>
+<h2>Recibos</h2>
+<p>El comprobante de lo cobrado, con su medio de pago. Desde la ficha de la venta se ve si ya tiene recibo emitido, para no cobrar dos veces el mismo trabajo.</p>
+<h2>Cuenta corriente</h2>
+<p>El saldo por cliente: lo que se le facturó, lo que pagó y lo que debe. Incluye también lo que se mandó a facturar y todavía no volvió emitido, así que el saldo no espera al circuito contable para reflejar la deuda.</p>
+<div class="callout"><p>La cuenta corriente <strong>no</strong> filtra por sucursal: el saldo de un cliente es uno solo para toda la empresa, aunque haya comprado en dos sucursales distintas.</p></div>
 <div class="docs-nav-footer">
-<a href="/docs/equipos.html">← Equipos</a>
-<a href="/docs/equipos-flota.html">Equipos y flota →</a>
+<a href="/docs/presupuestos-remitos.html">← Presupuestos y remitos</a>
+<a href="/docs/facturacion.html">Enviar a facturar →</a>
 </div>
   </main>
 </div>

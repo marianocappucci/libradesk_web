@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Depósitos — Documentación LibraDesk</title>
+  <title>Compras — Documentación LibraDesk</title>
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,11 +34,11 @@
     <div class="docs-sidebar-section">Clientes y equipos</div>
     <a href="/docs/clientes.html">Clientes</a>
     <a href="/docs/equipos.html">Equipos</a>
-    <a href="/docs/depositos.html" class="active">Depósitos</a>
+    <a href="/docs/depositos.html">Depósitos</a>
     <a href="/docs/equipos-flota.html">Equipos y flota</a>
     <div class="docs-sidebar-section">Inventario y compras</div>
     <a href="/docs/stock.html">Stock y productos</a>
-    <a href="/docs/compras.html">Compras</a>
+    <a href="/docs/compras.html" class="active">Compras</a>
     <div class="docs-sidebar-section">Ventas</div>
     <a href="/docs/presupuestos-remitos.html">Presupuestos y remitos</a>
     <a href="/docs/ventas-cobranzas.html">Ventas y cobranzas</a>
@@ -53,17 +53,21 @@
   </nav>
 
   <main class="docs-content">
-    <h1>Depósitos</h1>
-<p class="docs-lead">Dónde se guardan los equipos: los tuyos y los que están en la sede del cliente.</p>
-<h2>Dos clases</h2>
-<p>Un depósito puede ser <strong>propio</strong> —el taller, el depósito central, un pañol— o <strong>de un cliente</strong>. La diferencia no es cosmética: un equipo de un cliente sólo puede estar en un depósito propio o en el suyo.</p>
-<h2>Qué se ve</h2>
-<p>Cada depósito lista los equipos que tiene adentro, con su estado. Es la vista que contesta “¿qué hay en el taller ahora?” sin buscar equipo por equipo.</p>
-<h2>Movimientos</h2>
-<p>Mover un equipo de un depósito a otro deja registro con origen, destino, motivo y quién lo hizo. El <a href="/docs/reportes.html">reporte de movimientos</a> los muestra todos juntos.</p>
+    <h1>Compras</h1>
+<p class="docs-lead">Lo que se pide, lo que llega y lo que se paga.</p>
+<div class="callout"><p>Módulo del plan <strong>Premium</strong>. Son tres pantallas del mismo circuito visto en tres momentos, por eso van juntas.</p></div>
+<h2>Órdenes de compra</h2>
+<p>Qué le pedís a un proveedor, en qué cantidad y a qué precio. La orden queda abierta hasta que llega la mercadería.</p>
+<h2>Recepción de mercadería</h2>
+<p>Lo que efectivamente llegó, que no siempre es lo que se pidió. Al recibir, la mercadería <strong>entra al depósito de stock</strong> que elijas — no hay que cargarla dos veces.</p>
+<div class="callout"><p>No confundir con <a href="/docs/recepcion-reparaciones.html">Recepción de equipos</a>, que está en Mesa de ayuda: ahí entra un equipo <em>de un cliente</em> para repararlo; acá entra <em>mercadería de un proveedor</em> para tu stock. Son dos recepciones que nunca hace la misma persona, y por eso viven en grupos distintos del menú.</p></div>
+<h2>Egresos</h2>
+<p>Los pagos, con su estado. Permite responder qué se le debe a cada proveedor sin salir del sistema.</p>
+<h2>Proveedores</h2>
+<p>El padrón está en este grupo porque es a quien se le compra, y es donde lo busca quien carga una orden. Es <strong>el mismo padrón</strong> al que se le manda un equipo a service desde <a href="/docs/recepcion-reparaciones.html">Reparaciones</a>: una sola lista, no dos versiones de la misma empresa.</p>
 <div class="docs-nav-footer">
-<a href="/docs/equipos.html">← Equipos</a>
-<a href="/docs/equipos-flota.html">Equipos y flota →</a>
+<a href="/docs/stock.html">← Stock y productos</a>
+<a href="/docs/presupuestos-remitos.html">Presupuestos y remitos →</a>
 </div>
   </main>
 </div>
