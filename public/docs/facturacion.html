@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar a facturar — Documentación LibraDesk</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">L</div>LibraDesk</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/dashboard.html">Dashboard</a>
+    <a href="/docs/agenda.html">Agenda</a>
+    <a href="/docs/incidencias.html">Incidencias</a>
+    <a href="/docs/recepcion-reparaciones.html">Recepción y reparaciones</a>
+    <div class="docs-sidebar-section">Clientes y equipos</div>
+    <a href="/docs/clientes.html">Clientes</a>
+    <a href="/docs/equipos.html">Equipos</a>
+    <a href="/docs/depositos.html">Depósitos</a>
+    <a href="/docs/equipos-flota.html">Equipos y flota</a>
+    <div class="docs-sidebar-section">Inventario y compras</div>
+    <a href="/docs/stock.html">Stock y productos</a>
+    <a href="/docs/compras.html">Compras</a>
+    <div class="docs-sidebar-section">Ventas</div>
+    <a href="/docs/presupuestos-remitos.html">Presupuestos y remitos</a>
+    <a href="/docs/ventas-cobranzas.html">Ventas y cobranzas</a>
+    <a href="/docs/facturacion.html" class="active">Enviar a facturar</a>
+    <div class="docs-sidebar-section">Alquileres</div>
+    <a href="/docs/contratos.html">Equipos en alquiler</a>
+    <a href="/docs/activos.html">Activos</a>
+    <div class="docs-sidebar-section">Administración</div>
+    <a href="/docs/reportes.html">Reportes</a>
+    <a href="/docs/configuracion.html">Configuración</a>
+    <a href="/docs/usuarios-logs.html">Usuarios y logs</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Enviar a facturar</h1>
+<p class="docs-lead">El puente entre lo que entregaste y el sistema que emite la factura.</p>
+<div class="callout"><p>Módulo del plan <strong>Premium</strong>, y sólo para administradores: armar un comprobante es trabajo de cualquiera del equipo; decidir que se le cobre al cliente, no.</p></div>
+<h2>Qué hace y qué no</h2>
+<p><strong>LibraDesk no factura y no va a facturar.</strong> Arma el comprobante con lo que efectivamente se entregó y lo deja en la bandeja del sistema contable, donde una persona lo revisa y lo emite. Acá no hay CAE, no hay numeración fiscal y no hay nada irreversible: lo peor que puede pasar es que quede una fila de más en una bandeja, y se descarta con un click.</p>
+<h2>Sólo se manda el remito</h2>
+<p>La única fuente es el <a href="/docs/presupuestos-remitos.html">remito</a>. Un presupuesto aceptado es una oferta aceptada — todavía no pasó nada que facturar. Los otros orígenes del sistema llegan a facturación <strong>convirtiéndose en remito</strong> primero, no por un camino propio: la venta genera el suyo, y los trabajos de mesa de ayuda se agrupan en uno.</p>
+<h2>Varios trabajos, un solo remito</h2>
+<p>Se pueden juntar varias incidencias cerradas de un mismo cliente en un remito único, con el detalle renglón por renglón. Es lo que evita mandarle al cliente cinco comprobantes por una semana de trabajo.</p>
+<h2>A dónde va</h2>
+<table class="docs-table">
+<tr><th>Destino</th><th>Qué es</th></tr>
+<tr><td><strong>Contalibra</strong></td><td>El sistema contable de la misma familia. Si tenés los dos contratados, el remito aparece en su bandeja de comprobantes pendientes con el cliente ya identificado.</td></tr>
+<tr><td><strong>SOS Contador</strong></td><td>Si tu estudio contable ya trabaja con SOS Contador, LibraDesk manda ahí. Es un destino nativo: no hay que cambiar de sistema ni de contador.</td></tr>
+<tr><td><strong>Otro sistema con API</strong></td><td>El puente está hecho para tener varios destinos. Si el sistema que usás expone una API de comprobantes, se le suma un adaptador y funciona igual que los otros dos.</td></tr>
+</table>
+<h2>Cómo se configura</h2>
+<p>El emparejamiento lo hacemos nosotros al dar de alta la instancia, no se toca desde una pantalla: es una credencial de otro servicio y se define una vez. En <a href="/docs/configuracion.html">Configuración</a> ves si está conectado y a qué destino, nunca la credencial en sí.</p>
+<div class="callout"><p>El puente <strong>falla cerrado</strong>: sin destino configurado no se manda nada a ningún lado. Un cliente con el módulo habilitado y sin emparejar tiene la pantalla, no el envío.</p></div>
+<div class="docs-nav-footer">
+<a href="/docs/ventas-cobranzas.html">← Ventas y cobranzas</a>
+<a href="/docs/contratos.html">Equipos en alquiler →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraDesk · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

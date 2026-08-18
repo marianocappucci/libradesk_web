@@ -28,18 +28,25 @@
     <a href="/docs/primeros-pasos.html">Primeros pasos</a>
     <div class="docs-sidebar-section">Día a día</div>
     <a href="/docs/dashboard.html">Dashboard</a>
+    <a href="/docs/agenda.html">Agenda</a>
     <a href="/docs/incidencias.html">Incidencias</a>
     <a href="/docs/recepcion-reparaciones.html">Recepción y reparaciones</a>
-    <div class="docs-sidebar-section">Inventario</div>
+    <div class="docs-sidebar-section">Clientes y equipos</div>
     <a href="/docs/clientes.html">Clientes</a>
     <a href="/docs/equipos.html">Equipos</a>
     <a href="/docs/depositos.html">Depósitos</a>
-    <a href="/docs/activos.html">Activos</a>
-    <a href="/docs/contratos.html">Equipos en alquiler</a>
-    <div class="docs-sidebar-section">Comprobantes</div>
-    <a href="/docs/presupuestos-remitos.html" class="active">Presupuestos y remitos</a>
-    <div class="docs-sidebar-section">Gestión</div>
     <a href="/docs/equipos-flota.html">Equipos y flota</a>
+    <div class="docs-sidebar-section">Inventario y compras</div>
+    <a href="/docs/stock.html">Stock y productos</a>
+    <a href="/docs/compras.html">Compras</a>
+    <div class="docs-sidebar-section">Ventas</div>
+    <a href="/docs/presupuestos-remitos.html" class="active">Presupuestos y remitos</a>
+    <a href="/docs/ventas-cobranzas.html">Ventas y cobranzas</a>
+    <a href="/docs/facturacion.html">Enviar a facturar</a>
+    <div class="docs-sidebar-section">Alquileres</div>
+    <a href="/docs/contratos.html">Equipos en alquiler</a>
+    <a href="/docs/activos.html">Activos</a>
+    <div class="docs-sidebar-section">Administración</div>
     <a href="/docs/reportes.html">Reportes</a>
     <a href="/docs/configuracion.html">Configuración</a>
     <a href="/docs/usuarios-logs.html">Usuarios y logs</a>
@@ -50,16 +57,20 @@
 <p class="docs-lead">Los dos documentos que acompañan al trabajo, con su PDF listo para enviar.</p>
 <h2>Catálogo de servicios</h2>
 <p>Los ítems salen de un catálogo con descripción, precio y alícuota de IVA, pero <strong>también podés escribir un ítem libre</strong>: al tipear, el sistema sugiere del catálogo; si no elegís ninguna sugerencia, queda el texto que escribiste.</p>
-<div class="docs-callout"><p>El comprobante <strong>copia</strong> la descripción y el precio, no los referencia. Si mañana cambiás el precio del catálogo, los presupuestos ya enviados siguen diciendo lo que decían — que es lo que corresponde.</p></div>
+<div class="callout"><p>El comprobante <strong>copia</strong> la descripción y el precio, no los referencia. Si mañana cambiás el precio del catálogo, los presupuestos ya enviados siguen diciendo lo que decían — que es lo que corresponde.</p></div>
 <h2>IVA</h2>
 <p>La alícuota es una propiedad del servicio (21 %, 10,5 %, 27 % o exento), y la <strong>condición de IVA del cliente</strong> decide si el impuesto se discrimina o va incluido en el precio. El PDF lee la condición al generarse: si estaba mal cargada, corregirla arregla también los presupuestos ya emitidos.</p>
 <h2>Estados del presupuesto</h2>
 <p>Borrador, enviado, aceptado o rechazado. El estado es lo que después permite saber cuánto de lo presupuestado se convirtió en trabajo.</p>
+<div class="callout"><p>El vencimiento es <strong>automático</strong>: un presupuesto enviado cuya fecha de validez pasó ya figura vencido cuando abrís el listado. No hay nada que agendar ni ninguna tarea que recordar correr.</p></div>
+<h2>De presupuesto a remito</h2>
+<p>Un presupuesto aceptado se convierte en remito con un click, y la conversión es <strong>idempotente</strong>: si ya se convirtió, te devuelve el remito que existe en vez de emitir un segundo por el mismo trabajo.</p>
 <h2>Remitos</h2>
 <p>El remito documenta la entrega de bienes o trabajos. Misma mecánica de ítems y misma numeración correlativa.</p>
+<p>Es además <strong>el único documento que habilita a facturar</strong>: lo que se manda a <a href="/docs/facturacion.html">facturación</a> es la entrega hecha, no la oferta aceptada. Las <a href="/docs/ventas-cobranzas.html">ventas</a> y los trabajos de mesa de ayuda llegan ahí convirtiéndose en remito primero.</p>
 <div class="docs-nav-footer">
-<a href="/docs/activos.html">← Activos</a>
-<a href="/docs/reportes.html">Reportes →</a>
+<a href="/docs/compras.html">← Compras</a>
+<a href="/docs/ventas-cobranzas.html">Ventas y cobranzas →</a>
 </div>
   </main>
 </div>
