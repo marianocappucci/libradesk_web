@@ -6,6 +6,6 @@
 # figuraba en el wiki como "diferencia deliberada". El humano pidio que la
 # tenga, asi que se alinea con las otras cinco en vez de duplicar el gateo.
 # AUTH_UPSTREAM se setea via docker-compose.yml.
-FROM ghcr.io/marianocappucci/libra-nginx-web:v0.2.0
+FROM ghcr.io/marianocappucci/libra-nginx-web:v0.4.0
 COPY public/ /usr/share/nginx/html/
 EXPOSE 80
