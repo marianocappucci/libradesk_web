@@ -7,7 +7,7 @@ services:
     environment:
       - AUTH_UPSTREAM=libradesk-web-auth
     ports:
-      - "8088:80"
+      - "127.0.0.1:8088:80"
     networks:
       - stack-net
     depends_on:
