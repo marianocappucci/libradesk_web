@@ -23,6 +23,7 @@
     <a href="#funciones">Funciones</a>
     <a href="#integraciones">Integraciones</a>
     <a href="#planes">Planes</a>
+    <a href="#preguntas">Preguntas</a>
     <a href="/docs/">Documentación</a>
     <!-- La demo NO es de acceso libre: se entra con un código que emitimos
          nosotros. Este link va a la sección que lo explica, no a la demo. -->
@@ -45,6 +46,14 @@
     </a>
   </div>
 </section>
+
+<!-- ── Puntos fuertes ─────────────────────────────────────── -->
+<div class="highlights">
+  <div class="highlight"><i class="bi bi-ticket-detailed"></i><div><strong>Tickets auditados</strong><span>Quién cambió qué y cuándo</span></div></div>
+  <div class="highlight"><i class="bi bi-pc-display"></i><div><strong>Historial por equipo</strong><span>Movimientos y garantías</span></div></div>
+  <div class="highlight"><i class="bi bi-send-check"></i><div><strong>Del remito a la factura</strong><span>Directo a tu sistema contable</span></div></div>
+  <div class="highlight"><i class="bi bi-database-lock"></i><div><strong>Base propia</strong><span>Instancia aislada por empresa</span></div></div>
+</div>
 
 <!-- ── Funciones ──────────────────────────────────────────── -->
 <section id="funciones">
@@ -203,6 +212,48 @@
   </div>
 </section>
 
+<!-- ── Capturas de la demo ────────────────────────────────── -->
+<section class="showcase">
+  <div class="container">
+    <div class="section-label">Así se ve</div>
+    <h2 class="section-title">Los tickets y los equipos, en un solo lugar</h2>
+    <p class="section-sub">El listado de reclamos y el inventario de equipos. Capturas reales de la demo, con datos de prueba.</p>
+    <div class="showcase-grid">
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.libradesk.com.ar/reclamos</div>
+          </div>
+          <div class="browser-body">
+            <img src="/img/demo-reclamos.jpg" width="2160" height="1350" loading="lazy"
+                 alt="Listado de reclamos de LibraDesk: número, título, cliente, equipo, categoría, prioridad y estado de cada ticket">
+          </div>
+        </div>
+        <figcaption>Los reclamos: cada ticket con su cliente, equipo y estado.</figcaption>
+      </figure>
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.libradesk.com.ar/equipos</div>
+          </div>
+          <div class="browser-body">
+            <img src="/img/demo-equipos.jpg" width="2160" height="1350" loading="lazy"
+                 alt="Inventario de equipos de LibraDesk: tipo, cliente, marca, número de serie, ubicación y estado de cada equipo">
+          </div>
+        </div>
+        <figcaption>Los equipos: dónde está cada uno y en qué estado.</figcaption>
+      </figure>
+    </div>
+    <div class="showcase-cta">
+      <a href="#demo" class="btn btn-primary btn-lg">
+        <i class="bi bi-play-circle"></i> Pedir acceso a la demo
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ── Integraciones ──────────────────────────────────────── -->
 <section id="integraciones" class="alt">
   <div class="container">
@@ -245,22 +296,37 @@
 </section>
 
 <!-- ── Para quién ─────────────────────────────────────────── -->
-<section>
-  <div class="container" style="text-align:center">
+<section class="alt">
+  <div class="container">
     <div class="section-label">Para quién</div>
     <h2 class="section-title">Pensado para quien vive del service</h2>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem">
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-building-gear" style="color:var(--brand);margin-right:.4rem"></i>Proveedores de soporte IT tercerizado</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-hdd-network" style="color:var(--brand);margin-right:.4rem"></i>Áreas internas de sistemas</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-tools" style="color:var(--brand);margin-right:.4rem"></i>Talleres y service técnico con RMA</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-printer" style="color:var(--brand);margin-right:.4rem"></i>Empresas que alquilan equipos</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-laptop" style="color:var(--brand);margin-right:.4rem"></i>Service desks con inventario</span>
+    <div class="rubros">
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-building-gear"></i></div>
+        <h3>Soporte IT tercerizado</h3>
+        <p>Tickets con técnico asignado, cuadrillas en la agenda y el historial pegado al cliente y al equipo.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-hdd-network"></i></div>
+        <h3>Áreas de sistemas y service desks</h3>
+        <p>Incidencias por sector, inventario de equipos con historial de movimientos y reportes de carga por técnico.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-tools"></i></div>
+        <h3>Talleres y service con RMA</h3>
+        <p>Recepción bajo custodia, paso por taller o RMA de proveedor e informe de servicio en PDF para el cliente.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-printer"></i></div>
+        <h3>Empresas que alquilan equipos</h3>
+        <p>Contratos, cuotas por período, visitas de mantenimiento programadas y actas de entrega y devolución.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ── Cómo funciona ──────────────────────────────────────── -->
-<section class="alt">
+<section>
   <div class="container">
     <div class="section-label">Así de simple</div>
     <h2 class="section-title">Empezá en minutos</h2>
@@ -334,7 +400,7 @@
       <!-- Básico -->
       <div class="plan-card">
         <div class="plan-name">Básico</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">La mesa de ayuda completa: atender, reparar y dejar registro.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Incidencias con actividades y auditoría de estado</li>
@@ -355,7 +421,7 @@
       <!-- Estándar -->
       <div class="plan-card">
         <div class="plan-name">Estándar</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">Lo mismo, más la visibilidad para dirigirlo.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Todo lo del plan Básico</li>
@@ -373,7 +439,7 @@
       <div class="plan-card featured">
         <div class="plan-featured-tag">Más popular</div>
         <div class="plan-name">Premium</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">La empresa entera: del ticket a la facturación, sin planillas en el medio.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Todo lo del plan Estándar</li>
@@ -398,6 +464,43 @@
   </div>
 </section>
 
+<!-- ── Preguntas frecuentes ───────────────────────────────── -->
+<section id="preguntas" class="faq">
+  <div class="container faq-container">
+    <div class="section-label">Preguntas frecuentes</div>
+    <h2 class="section-title">Lo que más nos preguntan</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Tengo que instalar algo?</summary>
+        <p>No. Te damos de alta nosotros: cada empresa tiene su propia instancia, con su dominio y su base de datos, sin instalaciones.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿LibraDesk emite facturas?</summary>
+        <p>No: LibraDesk arma el comprobante con lo que efectivamente se entregó y lo deja en la bandeja de tu sistema contable, donde una persona lo revisa y lo emite. Se conecta con Contalibra, con SOS Contador o con cualquier sistema que exponga una API de comprobantes, y el puente está incluido en el plan Premium.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto cuesta?</summary>
+        <p>El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Clientes, equipos, incidencias y usuarios nunca se limitan por plan; lo que cambia entre planes son los módulos.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa con los datos de mi empresa?</summary>
+        <p>Cada empresa corre en su propia instancia, con su propia base de datos aislada y sus backups. Administrador y staff entran con usuario y contraseña, y el registro de actividad y de accesos permite responder quién hizo cada cosa.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Sirve si tengo más de una sucursal?</summary>
+        <p>Sí. Las sucursales no se cobran aparte: son estructura de la empresa, y las cargás al empezar junto con tus clientes, equipos y técnicos.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo probarlo antes de contratar?</summary>
+        <p>Sí, con la demo. No es de acceso libre: se entra con un código que te emitimos al momento, a tu nombre, por WhatsApp o por correo. El código tiene vencimiento, así que si se te pasa el plazo pedís otro.</p>
+      </details>
+    </div>
+    <p class="faq-more">¿Te quedó otra duda? <a href="https://wa.me/5491127752983?text=Hola,%20tengo%20una%20consulta%20sobre%20LibraDesk" target="_blank" rel="noopener">Escribinos por WhatsApp</a>.</p>
+  </div>
+</section>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Tengo que instalar algo?", "acceptedAnswer": {"@type": "Answer", "text": "No. Te damos de alta nosotros: cada empresa tiene su propia instancia, con su dominio y su base de datos, sin instalaciones."}}, {"@type": "Question", "name": "¿LibraDesk emite facturas?", "acceptedAnswer": {"@type": "Answer", "text": "No: LibraDesk arma el comprobante con lo que efectivamente se entregó y lo deja en la bandeja de tu sistema contable, donde una persona lo revisa y lo emite. Se conecta con Contalibra, con SOS Contador o con cualquier sistema que exponga una API de comprobantes, y el puente está incluido en el plan Premium."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "El precio depende del tamaño de tu operación: escribinos por WhatsApp y te lo pasamos. Clientes, equipos, incidencias y usuarios nunca se limitan por plan; lo que cambia entre planes son los módulos."}}, {"@type": "Question", "name": "¿Qué pasa con los datos de mi empresa?", "acceptedAnswer": {"@type": "Answer", "text": "Cada empresa corre en su propia instancia, con su propia base de datos aislada y sus backups. Administrador y staff entran con usuario y contraseña, y el registro de actividad y de accesos permite responder quién hizo cada cosa."}}, {"@type": "Question", "name": "¿Sirve si tengo más de una sucursal?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Las sucursales no se cobran aparte: son estructura de la empresa, y las cargás al empezar junto con tus clientes, equipos y técnicos."}}, {"@type": "Question", "name": "¿Puedo probarlo antes de contratar?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, con la demo. No es de acceso libre: se entra con un código que te emitimos al momento, a tu nombre, por WhatsApp o por correo. El código tiene vencimiento, así que si se te pasa el plazo pedís otro."}}]}</script>
+
 <!-- ── CTA final ──────────────────────────────────────────── -->
 <section class="cta-section">
   <h2>¿Listo para ordenar el service de tu empresa?</h2>
@@ -409,47 +512,47 @@
 </section>
 
 <!-- ── Footer ─────────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div>
+<footer class="site-footer">
+  <div class="f-inner">
+    <div class="f-about">
       <div class="footer-brand">
-        <img src="/img/marca.svg" alt="" class="logo-icon" width="28" height="28">
+        <img src="/img/marca.svg" alt="" class="logo-icon f-logo" width="28" height="28">
         LibraDesk
       </div>
-      <div class="footer-tagline">Mesa de ayuda, service e inventario para empresas de IT</div>
+      <p class="f-tagline">Mesa de ayuda, service e inventario para empresas de IT: del ticket a la factura.</p>
+      <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraDesk" target="_blank" rel="noopener" class="f-cta">
+        <i class="bi bi-whatsapp"></i> Escribinos por WhatsApp
+      </a>
     </div>
-    <div style="display:flex;gap:3rem;flex-wrap:wrap">
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Sistema</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="#funciones" style="color:#94a3b8;font-size:.9rem">Funciones</a>
-          <a href="#integraciones" style="color:#94a3b8;font-size:.9rem">Integraciones</a>
-          <a href="#planes" style="color:#94a3b8;font-size:.9rem">Planes</a>
-          <a href="#demo" style="color:#94a3b8;font-size:.9rem">Demo</a>
-          <a href="/docs/" style="color:#94a3b8;font-size:.9rem">Documentación</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Contacto</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="https://wa.me/5491127752983" target="_blank" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
-          <a href="mailto:soporte@libradesk.com.ar" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-envelope me-1"></i>Email</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Familia Libra</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="https://gestiolibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Gestiolibra — Turnos y agenda</a>
-          <a href="https://medlibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">MedLibra — Turnos para salud</a>
-          <a href="https://ventalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">VentaLibra — Punto de venta</a>
-          <a href="https://contalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Contalibra — ERP &amp; Facturación</a>
-          <a href="https://restolibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Restolibra — Gestión gastronómica</a>
-        </div>
-      </div>
-    </div>
+    <nav class="f-col" aria-label="Sistema">
+      <div class="f-title">Sistema</div>
+      <a href="#funciones">Funciones</a>
+      <a href="#integraciones">Integraciones</a>
+      <a href="#planes">Planes</a>
+      <a href="#preguntas">Preguntas frecuentes</a>
+      <a href="/docs/">Documentación</a>
+      <a href="#demo">Demo</a>
+    </nav>
+    <nav class="f-col" aria-label="Contacto">
+      <div class="f-title">Contacto</div>
+      <a href="https://wa.me/5491127752983" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+      <a href="mailto:soporte@libradesk.com.ar"><i class="bi bi-envelope"></i>soporte@libradesk.com.ar</a>
+    </nav>
+    <nav class="f-col f-family" aria-label="LibraSuite">
+      <div class="f-title">LibraSuite</div>
+      <a href="https://librasuite.com.ar" target="_blank" rel="noopener">LibraSuite<small>Todos los sistemas de la suite</small></a>
+      <a href="https://ventalibra.com.ar" target="_blank" rel="noopener">VentaLibra<small>Punto de venta para retail</small></a>
+      <a href="https://contalibra.com.ar" target="_blank" rel="noopener">Contalibra<small>ERP y facturación</small></a>
+      <a href="https://restolibra.com.ar" target="_blank" rel="noopener">Restolibra<small>Gestión gastronómica</small></a>
+      <a href="https://gestiolibra.com.ar" target="_blank" rel="noopener">Gestiolibra<small>Turnos para servicios</small></a>
+      <a href="https://medlibra.com.ar" target="_blank" rel="noopener">MedLibra<small>Turnos para salud</small></a>
+      <a href="https://libracargo.com.ar" target="_blank" rel="noopener">LibraCargo<small>Agencias de cargas</small></a>
+      <a href="https://libraclub.com.ar" target="_blank" rel="noopener">LibraClub<small>Reservas de canchas</small></a>
+    </nav>
   </div>
-  <div class="footer-copy">
-    © 2026 LibraDesk · parte de la familia Libra · Todos los derechos reservados
+  <div class="f-bottom">
+    <span>© 2026 LibraDesk · parte de <a href="https://librasuite.com.ar" target="_blank" rel="noopener">LibraSuite</a> · Todos los derechos reservados</span>
+    <a href="/legal/terminos.html">Términos y condiciones</a>
   </div>
 </footer>
 
